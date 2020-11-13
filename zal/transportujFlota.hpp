@@ -16,5 +16,4 @@ unsigned int transportujFlota(unsigned int towar)
   l_zaglowcow++;
   return l_zaglowcow;
    }  delete s1;}
-   std::cout<<l_zaglowcow;
 }}
