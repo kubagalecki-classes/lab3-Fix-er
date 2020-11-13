@@ -10,7 +10,7 @@ unsigned int transportujFlota(unsigned int towar)
  // while(towar<=towar_p){
   Stocznia stocznia{};
   Statek* s1 = stocznia();
-  towar_p=s1->transportuj();   
+  towar_p=+s1->transportuj();   
   if(dynamic_cast<Zaglowiec*>(s1)){
   l_zaglowcow ++;}
   delete s1;
