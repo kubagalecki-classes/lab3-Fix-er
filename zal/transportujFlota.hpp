@@ -12,7 +12,7 @@ unsigned int transportujFlota(unsigned int towar)
   Statek* s1 = stocznia();
   int a=s1->transportuj(); 
   towar_p+=a;  
-  if(dynamic_cast<Tankowiec*>(s1)){    
+  if(typeid(*s1) == typeid(Zaglowiec){    
   l_zaglowcow++;}
   delete s1;}
   return l_zaglowcow;
