@@ -4,9 +4,9 @@
 
 unsigned int transportujFlota(unsigned int towar)
 {
-  int towar_p =0;
-  int l_zaglowcow=0;
   if(towar!=0){
+  int towar_p =0;
+  int l_zaglowcow=0;  
  while(towar>=towar_p){
   Stocznia stocznia{};
   Statek* s1 = stocznia();
@@ -16,4 +16,4 @@ unsigned int transportujFlota(unsigned int towar)
   l_zaglowcow++;}
   delete s1;}
   return l_zaglowcow;
-}}
+}return 0;}
