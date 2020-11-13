@@ -14,6 +14,6 @@ unsigned int transportujFlota(unsigned int towar)
   towar_p+=a;  
   //if(dynamic_cast<Zaglowiec*>(s1)){    
   l_zaglowcow++;
-  return l_zaglowcow;
+  return towar_p;
   delete s1;}
 }}
