@@ -10,9 +10,9 @@ unsigned int transportujFlota(unsigned int towar)
   while(towar<=towar_p){
   Stocznia stocznia{};
   Statek* s1 = stocznia();
-  int p= s1->transportuj(); 
+  towar_p= s1->transportuj(); 
   delete s1;
   if(dynamic_cast<Zaglowiec*>(s1)){}
   l_zaglowcow ++;}
-  std::cout<<"Towar przewieziony. "<<p<< "Użyto "<<l_zaglowcow<<" żaglowców" ;
+  std::cout<<"Towar przewieziony. "<<towar_p<< "Użyto "<<l_zaglowcow<<" żaglowców" ;
 } else{std::cout<<"Brak towaru";}}
