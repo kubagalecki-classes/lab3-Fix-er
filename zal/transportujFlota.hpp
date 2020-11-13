@@ -13,8 +13,6 @@ unsigned int transportujFlota(unsigned int towar)
    towar_p+ = s1->transportuj();
    delete s1;
    if( dynamic_cast<Zaglowiec>(s1) ){}
-   l_zaglowcow ++;
-   return l_zaglowcow;}}
-   std::cout<<"Towar przewieziony";
-   return 0;
+   l_zaglowcow ++;}
+   std::cout<<"Towar przewieziony. Użyto "<<l_zaglowcow<<" żaglowców" ;
 }
