@@ -13,7 +13,7 @@ unsigned int transportujFlota(unsigned int towar)
   int a=s1->transportuj(); 
   towar_p+=a;  
   Zaglowiec* t = dynamic_cast<Zaglowiec*>(s1);
-  if (t == NULL) {
+  if (t != NULL) {
  // if(typeid(*s1) == typeid(Zaglowiec)){    
   l_zaglowcow++;}
   delete s1;}
