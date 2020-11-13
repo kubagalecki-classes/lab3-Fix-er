@@ -4,7 +4,7 @@
 
 unsigned int transportujFlota(unsigned int towar)
 {
-  int towar_p =0;
+  int* towar_p =0;
   int l_zaglowcow=0;
   if(towar!=0){
  //while(towar>=towar_p)
