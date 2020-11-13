@@ -12,7 +12,7 @@ unsigned int transportujFlota(unsigned int towar)
   Statek* s1 = stocznia();
   towar_p += s1->transportuj(); 
   delete s1;
-  if( dynamic_cast<Zaglowiec*>(s1) ){}
+  if(std::dynamic_cast<Zaglowiec*>(s1)){}
   l_zaglowcow ++;}
-  std::cout<<"Towar przewieziony. "<<towar_p<< "Użyto "<<l_zaglowcow<<" żaglowców" ;
+  std::cout<<"Towar przewieziony. "<<s1->transportuj()<< "Użyto "<<l_zaglowcow<<" żaglowców" ;
 } else{std::cout<<"Brak towaru";}}
