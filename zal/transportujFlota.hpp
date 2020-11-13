@@ -11,7 +11,7 @@ unsigned int transportujFlota(unsigned int towar)
   Stocznia stocznia{};
   Statek* s1 = stocznia();
   int a=s1->transportuj(); 
-  towar_p+=a;
+  towar_p=a;
   if(dynamic_cast<Zaglowiec*>(s1)){}
   l_zaglowcow ++;
   delete s1;}
